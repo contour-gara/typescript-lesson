@@ -60,6 +60,16 @@ const userA: USER = {
   password: "yyy",
 };
 
+// 2-8
+
+let value: boolean | number;
+value = true;
+value = 10;
+// value = "a";
+
+let arrayUni: (number | string)[];
+arrayUni = [0, 1, 2, "hello"];
+
 function App() {
   return (
     <div className="App">
