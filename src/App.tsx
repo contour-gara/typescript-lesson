@@ -70,6 +70,16 @@ value = 10;
 let arrayUni: (number | string)[];
 arrayUni = [0, 1, 2, "hello"];
 
+// 2-9
+
+let company: "facebook" | "Google" | "Amazon";
+company = "Amazon";
+// company = "Apple";
+
+let memory: 256 | 512;
+// memory = 12;
+memory = 256;
+
 function App() {
   return (
     <div className="App">
