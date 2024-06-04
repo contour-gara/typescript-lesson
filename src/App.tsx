@@ -81,6 +81,7 @@ let memory: 256 | 512;
 memory = 256;
 
 // 2-10
+
 let msg: string = "Hi";
 let msg2: typeof msg;
 msg2 = "hello";
@@ -88,6 +89,25 @@ msg2 = "hello";
 
 let animal = { cat: "small vat" };
 let newAnimal: typeof animal = { cat: "big cat" };
+
+// 2-11
+
+type KEYS = {
+  primary: string;
+  secondary: string;
+};
+let key: keyof KEYS;
+key = "primary";
+// key = "aaa";
+
+const SPORTS = {
+  soccer: "Socfer",
+  basball: "Baseball",
+};
+
+let keySports: keyof typeof SPORTS;
+keySports = "soccer";
+// keySports = "aaa";
 
 function App() {
   return (
