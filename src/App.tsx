@@ -80,6 +80,15 @@ let memory: 256 | 512;
 // memory = 12;
 memory = 256;
 
+// 2-10
+let msg: string = "Hi";
+let msg2: typeof msg;
+msg2 = "hello";
+// msg2 = 3;
+
+let animal = { cat: "small vat" };
+let newAnimal: typeof animal = { cat: "big cat" };
+
 function App() {
   return (
     <div className="App">
