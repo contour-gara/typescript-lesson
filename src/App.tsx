@@ -131,6 +131,19 @@ const PC2: PC = {
   OSType: OS.Mac,
 };
 
+// 2-13
+
+const comp1 = "test";
+let comp2: string = comp1;
+
+let comp3: string = "test";
+// let comp4: "test" = comp3;
+
+let funcComp1 = (x: number) => {};
+let funcComp2 = (x: string) => {};
+
+// funcComp1 = funcComp2;
+
 function App() {
   return (
     <div className="App">
