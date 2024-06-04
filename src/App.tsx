@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Data from "./date.json";
+import Data from "./data.json";
+import TestComponent from "./TestComponent";
 
 // 2-6
 
@@ -194,12 +195,14 @@ const funcGen4 = <T extends Props>(props: T) => {
 
 type USERS = typeof Data;
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header"> </header>
+      <header className="App-header">
+        <TestComponent text="hello from App" />
+      </header>
     </div>
   );
-}
+};
 
 export default App;
